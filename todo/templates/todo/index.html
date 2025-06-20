@@ -19,6 +19,7 @@
                 {% else %}
                     {{ task.title }} ❌
                 {% endif %}
+                <a href="{% url 'edit_task' task.id %}">✏️ Edit</a>
                 <a href="{% url 'toggle_task' task.id %}">✅ Toggle</a>
                 <a href="{% url 'delete_task' task.id %}">🗑️ Delete</a>
             </li>

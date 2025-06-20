@@ -1,4 +1,6 @@
--e "*.pyc\n__pycache__/\ndb.sqlite3\n.env\n/static/\n*.log" 
--e "__pycache__/\n*.pyc\ndb.sqlite3" 
--e "__pycache__/\n*.pyc\ndb.sqlite3" 
--e "\n__pycache__/\n*.pyc\ndb.sqlite3" 
+__pycache__/
+*.pyc
+db.sqlite3
+.env
+/static/
+*.log

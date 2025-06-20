@@ -15,6 +15,7 @@
         {% for task in tasks %}
             <li>
                 {{ task.title }} - {% if task.completed %}✔️{% else %}❌{% endif %}
+                <a href="{% url 'delete_task' task.id %}">🗑️ Delete</a>
             </li>
         {% endfor %}
     </ul>

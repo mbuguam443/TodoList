@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth.models import User
+from django.http import HttpResponse
 
 def create_super(request):
     if not User.objects.filter(username='admin').exists():

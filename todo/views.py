@@ -19,3 +19,9 @@ def delete_task(request, task_id):
     task = get_object_or_404(Task, id=task_id)
     task.delete()
     return redirect('index')
+
+def toggle_task(request, task_id):
+    task = get_object_or_404(Task, id=task_id)
+    task.completed = not task.completed
+    task.save()
+    return redirect('index')
